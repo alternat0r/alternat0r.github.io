@@ -1,0 +1,108 @@
+
+body {
+    font-size: 9pt;
+    font-family: courier;
+    color:rgb(0, 255, 0);
+    size: 500px 500px;
+
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+
+    background-image:url("bg_bottom.png"),url("bg_top.png");
+    background-attachment:fixed,fixed;
+    background-position:bottom left, top left;
+    background-repeat:no-repeat, no-repeat;
+    background-color:rgb(31,31,31);
+}
+
+#content {
+    top: 80px;
+    /* left: 332px;*/
+    width: 100%;
+    height: 100%;
+    /* max-width: 1000px; */
+
+    position: fixed;
+    overflow: auto;
+    scrollbar-shadow-color: #0;
+    scrollbar-highlight-color:#0;
+    scrollbar-3dlight-color: #7D7E94;
+    scrollbar-darkshadow-color: #2D2C4D;
+    scrollbar-track-color: #7D7E94;
+    scrollbar-arrow-color: #C1C1D1;
+}
+
+#header {
+    display: block;
+    top: 3px;
+    left: 10px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+}
+
+#navigation {
+    display: block;
+    top: 180px;
+    left: 15px;
+    width: 265px;
+    height: 300px;
+    position: fixed;
+}
+
+.article {
+    border-style:dashed;
+    border-width:1px;
+    border-color:rgb(201,212,105);;
+    /*background-color:rgb(51,51,51);*/
+    margin: 10px 30px 30px 30px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+}
+
+.article-noborder {
+    margin: 10px 30px 30px 10px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+}
+
+.article-title {
+    font-weight:900;
+    color:rgb(0, 255, 0);
+}
+
+.article-author {
+    /*color:rgb(135, 206, 250);*/
+}
+
+.article-date {
+    
+}
+
+.article-body {
+    padding: 5px 5px 5px 10px;    
+}
+
+span.link {
+    font-family: courier;
+    color:rgb(120, 120, 155);
+    color:rgb(135, 206, 250);
+    padding:0px;
+    margin:0px;
+    text-decoration:underline
+}
+
+span.string {
+    color:rgb(135, 206, 250);
+}
+
+span.tab{
+    padding: 0 15px; /* Or desired space*/
+}
+
+
+* html #content {position: absolute;}
+* html #header {position: absolute;}
+* html #navigation {position: absolute;}
